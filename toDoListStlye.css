@@ -1,0 +1,99 @@
+body
+{
+    margin: 0;
+    min-width: 300px;
+    
+}
+
+*
+{
+    box-sizing: border-box;
+    
+}
+.the-header
+{
+    background-color: violet;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+   
+}
+.the-header:after{
+    content: '';
+    display: table;
+    clear:both;
+}
+h1
+{
+    background-color: cornsilk;
+}
+#the-input
+{
+    padding: 20px 20px;
+    width: 80%;
+    font-size: 25px;
+    border: 4px;
+    
+}
+span
+{
+    width: 20%;
+    background-color: cornsilk;
+    padding: 20px;
+    cursor: pointer;
+    -webkit-user-select:none;
+}
+ul{     
+    margin: 0;
+    padding: 0;
+}
+ul li
+{
+    position: relative;
+    background-color: lightgray;
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px 6px 10px 30px;
+    transition: 0.3s;
+    -webkit-user-select:none;
+}
+ul li:nth-child(
+even){
+    background-color: darkgray;
+}
+ul li:hover{
+    background-color: darkcyan; 
+}
+ul li.checked{
+    background-color: black;
+    color: white;
+    text-decoration: line-through;  
+}
+ul li.checked::before
+{
+    content: '';
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top:10px;
+    left: 15px;
+   
+    height: 15px;
+    width:10px;
+}
+.close
+{
+    position: absolute;
+    right: 0;
+    top:0;
+  color: red;
+    height: 9px;
+    width:9px;
+    background: grey;
+    
+    
+   
+}
+.close:hover{
+    background: red;
+}
